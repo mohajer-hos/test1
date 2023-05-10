@@ -10,7 +10,7 @@ pipeline{
 	    stage('gitclone') {
 
 			steps {
-				git clone 'https://github.com/shazforiot/nodeapp_test.git'
+				git 'https://github.com/shazforiot/nodeapp_test.git'
 			}
 		}
 
