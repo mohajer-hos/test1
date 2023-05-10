@@ -31,14 +31,14 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push thetips4you/nodeapp_test:latest'
+				sudo sh 'docker push thetips4you/nodeapp_test:latest'
 			}
 		}
 	}
 
 	post {
 		always {
-			sh 'docker logout'
+			sudo sh 'docker logout'
 		}
 	}
 
